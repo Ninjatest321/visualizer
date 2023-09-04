@@ -215,3 +215,55 @@ function partition(array, low, high, animations) {
     animations.push(["PivotOff", Math.floor((low + high) / 2)]);
     return i;
 }
+
+//Heapsort
+function heapSortAnimations(array) {
+    // animations = [];
+     
+
+}
+
+function pop() {
+    let min = this.array[0];
+
+    let temp = this.array[0];
+    this.array[0] = this.array[this.array.length-1-this.popped];
+    this.array[this.array.length-1-this.popped] = temp;
+    this.popped++;
+
+    heapify(this.array, 0, this.array.length-this.popped);
+    return(min);
+}
+
+
+function createMinHeap(array) {
+    for(let i = Math.floor(array.length / 2) - 1; i >= 0; i--) {
+        heapify(array, i);
+    }
+    return array;
+}
+
+function heapify(array, index, length) {
+    let min = index;
+    let left = 2 * index + 1;
+    let right = 2 * index + 2;
+
+
+    if(left < length && array[left] < array[min]) {
+        min = left;
+    }
+
+    if(right < length && array[right] < array[min]) {
+        min = right;
+    }
+
+    if (min != index) {
+        let temp = array[index];
+        array[index] = array[min];
+        array[min] = temp;
+
+        heapify(array, min, length);
+    }
+}
+//
+

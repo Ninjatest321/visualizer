@@ -3,7 +3,7 @@ import './SortingVisualizer.css';
 import { bubbleSortAnimations, selectionSortAnimations, mergeSortAnimations, insertionSortAnimations, quicksortAnimations } from './sortAlgorithms/sortAlgorithms';
 
 const ANIMATION_SPEED = 1;
-const SIZE = 100;
+const SIZE = 200;
 
 export default class SortingVisualizer extends React.Component {
     constructor(props) {
@@ -184,7 +184,7 @@ export default class SortingVisualizer extends React.Component {
                 <button 
                 style={{
                     display: 'inline-block', 
-                    marginTop: 750}}
+                    marginTop: 550}}
                 onClick={() => this.resetArray()} >
                 Generate Array
                 </button>
@@ -192,7 +192,7 @@ export default class SortingVisualizer extends React.Component {
                 <button 
                 style={{
                     display: 'inline-block', 
-                    marginTop: 750}}
+                    marginTop: 550}}
                 onClick={() => this.selectionSort()} >
                 Selection Sort
                 </button>
@@ -200,7 +200,7 @@ export default class SortingVisualizer extends React.Component {
                 <button 
                 style={{
                     display: 'inline-block', 
-                    marginTop: 750}}
+                    marginTop: 550}}
                 onClick={() => this.insertionSort()} >
                 Insertion Sort
                 </button>
@@ -208,7 +208,7 @@ export default class SortingVisualizer extends React.Component {
                 <button 
                 style={{
                     display: 'inline-block', 
-                    marginTop: 750}}
+                    marginTop: 550}}
                 onClick={() => this.bubbleSort()} >
                 Bubble Sort
                 </button>
@@ -216,7 +216,7 @@ export default class SortingVisualizer extends React.Component {
                 <button 
                 style={{
                     display: 'inline-block', 
-                    marginTop: 750}}
+                    marginTop: 550}}
                 onClick={() => this.mergeSort()} >
                 Merge Sort
                 </button>
@@ -224,7 +224,7 @@ export default class SortingVisualizer extends React.Component {
                 <button 
                 style={{
                     display: 'inline-block', 
-                    marginTop: 750}}
+                    marginTop: 550}}
                 onClick={() => this.quickSort()} >
                 Quick Sort
                 </button>
@@ -232,7 +232,7 @@ export default class SortingVisualizer extends React.Component {
                 <button 
                 style={{
                     display: 'inline-block', 
-                    marginTop: 750}}
+                    marginTop: 550}}
                 onClick={() => arraysAreEqual(this.state.array, this.state.array.sort())} >
                 Check Sort
                 </button>
@@ -251,10 +251,8 @@ function arraysAreEqual(arrayOne, arrayTwo) {
     if (arrayOne.length !== arrayTwo.length) return false;
     for (let i = 0; i < arrayOne.length; i++) {
       if (arrayOne[i] !== arrayTwo[i]) {
-        console.log(false);
         return false;
       }
     }
-    console.log(true);
     return true;
   }
