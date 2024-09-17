@@ -18,7 +18,7 @@ Please wait till the sequence of bars are sorted before generating a new array a
 ### Demo
 https://github.com/user-attachments/assets/1fc40bff-b96b-45a5-9d34-0fc6d45c7f39
 
-### Path-Finding Visualizer Demo
+### Path-Finding Visualizer Instructions
 To use the path-fining visualizer, click "Path-Finding Visualizer" in the navigation bar. To create obstacles, click on a square and it will be marked as not traversable. To create a series of obstacles at once, hold down the mouse and drag across several squares to mark them all as obstacles. Furthermore, to remove obstacles click/drag on any obstacles and it will flip back to a traversable square.
 
 To reset the grid and remove all obstacles, use the reset grid button. After setting up the obstacles, run the desired path-finding algorithm.
