@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Amogh's Algorithm Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Running Instructions
+To run the program after cloning, obtain all needed dependencies and then run:
 
-## Available Scripts
+```npm start```
 
-In the project directory, you can run:
+## Sorting Visualizer
+### Demo
+https://github.com/user-attachments/assets/7c39e44b-6b81-412b-8ff4-83f67e37b214
 
-### `npm start`
+### Sorting Visualizer Instructions
+To use the sorting visualizer, click "Sorting Visualizer" in the navigation bar. You can then use the 'Generate Array' command to generate a random sequence of bars to be sorted. Then, click on any of the Sorting Method buttons to sort the sequence of bars. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Please wait till the sequence of bars are sorted before generating a new array and trying a new sorting method for best performance.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Path-Finding Visualizer Demo
+### Demo
+https://github.com/user-attachments/assets/1fc40bff-b96b-45a5-9d34-0fc6d45c7f39
 
-### `npm test`
+### Path-Finding Visualizer Demo
+To use the path-fining visualizer, click "Path-Finding Visualizer" in the navigation bar. To create obstacles, click on a square and it will be marked as not traversable. To create a series of obstacles at once, hold down the mouse and drag across several squares to mark them all as obstacles. Furthermore, to remove obstacles click/drag on any obstacles and it will flip back to a traversable square.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To reset the grid and remove all obstacles, use the reset grid button. After setting up the obstacles, run the desired path-finding algorithm.
